@@ -29,44 +29,19 @@
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 
     <style>
-        .navigation .dropdown>a {
-            color: #856b5c;
-            position: relative;
-            padding-right: 15px;
-        }
-
-        .navigation .dropdown>a .dropdown-arrow {
-            font-size: 0.8em;
-            margin-left: 5px;
-        }
-
-        .navigation .dropdown:hover .dropdown-menu {
-            display: block;
-            position: absolute;
-            background-color: #f9f6f3;
-            border: 1px solid #ddd;
-            padding: 10px 0;
-            min-width: 150px;
-            z-index: 10;
-        }
-
-        .navigation .dropdown-menu li a {
-            color: #856b5c;
-            padding: 8px 15px;
-            display: block;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-
-        .navigation .dropdown-menu li a:hover {
-            background-color:#b38971c5;
-            padding: 10px;
+         .dropdown ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-radius: 20px;
         }
 
-        .navigation .dropdown:hover>a .dropdown-arrow {
-            transform: rotate(180deg);
-            transition: transform 0.3s;
+        .dropdown ul li{
+            margin-bottom: 10px;
+        }
+
+        .dropdown ul li:hover {
+            background: #b5907bcb;
         }
 
 
@@ -96,16 +71,15 @@
         <!-- Main Header -->
         <header class="main-header header-style-one">
             <!-- Header Upper -->
-            <div class="header-upper" style="background-color: #ffffff;">
+            <div class="header-upper" style="background-color:#ffffff">
                 <div class="inner-container clearfix">
-                    <!-- Logo -->
+                    <!--Logo-->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="Hotel-National-Logo.png" alt="Hotel Logo"></a>
-                        </div>
+                        <div class="logo"><a href="index.html">
+                                <img src="Hotel-National-Logo.png" alt=""></a></div>
                     </div>
-
                     <div class="nav-outer clearfix">
-                        <!-- Mobile Navigation Toggler -->
+                        <!--Mobile Navigation Toggler-->
                         <div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span><span
                                 class="txt">Menu</span></div>
 
@@ -113,22 +87,21 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current"><a href="index.html">Home</a></li>
+                                    <li class="current dropdown"><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li class="dropdown">
-                                        <a href="rooms-grid.html">Rooms <span
-                                                class="dropdown-arrow">&#9662;</span></a>
-                                        <ul class="dropdown-menu">
+                                        <a href="rooms-grid.html">Rooms <span style="color: grey;"><</span></a>
+                                        <ul>
                                             <li><a href="delux-double-room.html">Deluxe Double Rooms</a></li>
-                                            <hr>
+                                        
                                             <li><a href="">Triple Rooms</a></li>
-                                            <hr>
+                                        
                                             <li><a href="">Quadruple Rooms</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="gallery.html">Gallery</a></li>
                                     <li><a href="contact-us.html">Contact</a></li>
-                                    <li><a href="#"><span class="icon flaticon-smartphone-2"></span><span
+                                    <li><a href=""><span class="icon flaticon-smartphone-2"></span><span
                                                 class="txt">123456789</span></a></li>
                                 </ul>
                             </div>
@@ -137,11 +110,43 @@
 
                     <div class="other-links clearfix">
                         <div class="link-box">
-                            <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a>
+                            <ul class="clearfix">
+                                <!-- Placeholder for additional links if needed -->
+                            </ul>
+                        </div>
+                        <div class="link-box">
+                            <a href="" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a>
                         </div>
                     </div>
+
                 </div>
             </div>
+            <!--End Header Upper-->
+
+            <!-- Mobile Menu  -->
+            <div class="mobile-menu">
+                <div class="close-btn"><span class="icon flaticon-targeting-cross"></span></div>
+                <div class="menu-backdrop"></div>
+                <div class="nav-logo"><a href="index.html">National Hotel</a></div>
+                <nav class="menu-box">
+                    <div class="menu-outer">
+                       
+                    </div>
+                </nav>
+                <div class="nav-bottom">
+                    <div class="copyright">2024 National Hotel | All Rights Reserved @ Hospitality Minds 2024</div>
+                 
+                    <div class="social-links">
+                        <ul class="clearfix">
+                            <a href=""><span
+                                    class="fab fa-facebook-f"></span></a>
+                            <a href=""><span
+                                    class="fab fa-instagram"></span></a>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- End Mobile Menu -->
+
         </header>
         <!-- End Main Header -->
 

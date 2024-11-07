@@ -53,62 +53,36 @@
         gtag('config', 'G-06VZ9D8G4W');
     </script>
 
-<style>
-
-.navigation .dropdown>a {
-            color: #856b5c;
-            position: relative;
-            padding-right: 15px;
-        }
-
-        .navigation .dropdown>a .dropdown-arrow {
-            font-size: 0.8em;
-            margin-left: 5px;
-        }
-
-        .navigation .dropdown:hover .dropdown-menu {
-            display: block;
-            position: absolute;
-            background-color: #f9f6f3;
-            border: 1px solid #ddd;
-            padding: 10px 0;
-            min-width: 150px;
-            z-index: 10;
-        }
-
-        .navigation .dropdown-menu li a {
-            color: #856b5c;
-            padding: 8px 15px;
-            display: block;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-
-        .navigation .dropdown-menu li a:hover {
-            background-color:#b38971c5;
-            padding: 10px;
+    <style>
+        .dropdown ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             border-radius: 20px;
         }
 
-        .navigation .dropdown:hover>a .dropdown-arrow {
-            transform: rotate(180deg);
-            transition: transform 0.3s;
+        .dropdown ul li {
+            margin-bottom: 10px;
+        }
+
+        .dropdown ul li:hover {
+            background: #b5907bcb;
         }
 
 
 
-    .main-footer {
-        color: #ffffff;
-    }
+        .main-footer {
+            color: #ffffff;
+        }
 
-    .main-footer a,
-    .main-footer .widget-title h4,
-    .main-footer .copyright,
-    .main-footer ul li,
-    .main-footer ul li a {
-        color: #ffffff !important;
-    }
-</style>
+        .main-footer a,
+        .main-footer .widget-title h4,
+        .main-footer .copyright,
+        .main-footer ul li,
+        .main-footer ul li a {
+            color: #ffffff !important;
+        }
+    </style>
 
 
 </head>
@@ -122,18 +96,17 @@
         </div>
 
         <!-- Main Header -->
-       <header class="main-header header-style-one">
+        <header class="main-header header-style-one">
             <!-- Header Upper -->
-            <div class="header-upper" style="background-color: #ffffff;">
+            <div class="header-upper" style="background-color:#ffffff">
                 <div class="inner-container clearfix">
-                    <!-- Logo -->
+                    <!--Logo-->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html"><img src="Hotel-National-Logo.png" alt="Hotel Logo"></a>
-                        </div>
+                        <div class="logo"><a href="index.html">
+                                <img src="Hotel-National-Logo.png" alt=""></a></div>
                     </div>
-
                     <div class="nav-outer clearfix">
-                        <!-- Mobile Navigation Toggler -->
+                        <!--Mobile Navigation Toggler-->
                         <div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span><span
                                 class="txt">Menu</span></div>
 
@@ -141,22 +114,22 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current"><a href="index.html">Home</a></li>
+                                    <li class="current dropdown"><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
                                     <li class="dropdown">
-                                        <a href="rooms-grid.html">Rooms <span
-                                                class="dropdown-arrow">&#9662;</span></a>
-                                        <ul class="dropdown-menu">
+                                        <a href="rooms-grid.html">Rooms <span style="color: grey;">
+                                                < </span></a>
+                                        <ul>
                                             <li><a href="delux-double-room.html">Deluxe Double Rooms</a></li>
-                                            <hr>
+
                                             <li><a href="">Triple Rooms</a></li>
-                                            <hr>
+
                                             <li><a href="">Quadruple Rooms</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="gallery.html">Gallery</a></li>
                                     <li><a href="contact-us.html">Contact</a></li>
-                                    <li><a href="#"><span class="icon flaticon-smartphone-2"></span><span
+                                    <li><a href=""><span class="icon flaticon-smartphone-2"></span><span
                                                 class="txt">123456789</span></a></li>
                                 </ul>
                             </div>
@@ -165,11 +138,41 @@
 
                     <div class="other-links clearfix">
                         <div class="link-box">
-                            <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a>
+                            <ul class="clearfix">
+                                <!-- Placeholder for additional links if needed -->
+                            </ul>
+                        </div>
+                        <div class="link-box">
+                            <a href="" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a>
                         </div>
                     </div>
+
                 </div>
             </div>
+            <!--End Header Upper-->
+
+            <!-- Mobile Menu  -->
+            <div class="mobile-menu">
+                <div class="close-btn"><span class="icon flaticon-targeting-cross"></span></div>
+                <div class="menu-backdrop"></div>
+                <div class="nav-logo"><a href="index.html">National Hotel</a></div>
+                <nav class="menu-box">
+                    <div class="menu-outer">
+
+                    </div>
+                </nav>
+                <div class="nav-bottom">
+                    <div class="copyright">2024 National Hotel | All Rights Reserved @ Hospitality Minds 2024</div>
+
+                    <div class="social-links">
+                        <ul class="clearfix">
+                            <a href=""><span class="fab fa-facebook-f"></span></a>
+                            <a href=""><span class="fab fa-instagram"></span></a>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- End Mobile Menu -->
+
         </header>
         <!-- End Main Header -->
 
@@ -196,7 +199,7 @@
         <!--End Banner Section -->
 
         <!--Contact Section-->
-        <section class="contact-section-two"  style="background-color:#856b5c;">
+        <section class="contact-section-two" style="background-color:#856b5c;">
             <div class="auto-container clearfix">
                 <div class="row clearfix">
 
@@ -211,7 +214,8 @@
                                             data-wow-duration="2000ms"><span class="flaticon-placeholder-1"></span>
                                         </div>
                                         <h4>Address</h4>
-                                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nostrum?</div>
+                                        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Corrupti, nostrum?</div>
                                     </div>
                                 </div>
                                 <div class="info-block">
@@ -231,8 +235,7 @@
                                             data-wow-duration="2000ms"><span class="flaticon-email-1"></span></div>
                                         <h4>Email Address</h4>
                                         <div class="text">
-                                            <a
-                                                href="">lorem@gmail.com</a>
+                                            <a href="">lorem@gmail.com</a>
                                             <br>
 
                                         </div>
@@ -246,7 +249,8 @@
                             <div class="form-box default-form contact-form-two wow fadeInRight" data-wow-delay="0ms"
                                 data-wow-duration="1500ms">
                                 <h3>Lorem, ipsum dolor?</h3>
-                                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, aut.</div>
+                                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, aut.
+                                </div>
                                 <form method="post" action="sendemail.php" id="contact-form">
                                     <div class="form-group">
                                         <div class="field-inner">
@@ -312,9 +316,7 @@
         <!--Map Section-->
         <section class="map-section" style="background-color: #ffffff;">
             <div class="map-layer">
-                <iframe
-                    src=""
-                    width="1400" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                <iframe src="" width="1400" height="600" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
@@ -368,16 +370,15 @@
                                                 <h4>Contact</h4>
                                             </div>
                                             <ul class="info">
-                                                <li class="address">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, ad?</li>
+                                                <li class="address">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                    elit. Vel, ad?</li>
                                                 <li class="phone"><a href="tel:+917738982330">1234557689</a></li>
                                                 <li class="email"><a
                                                         href="mailto:reservations@beachwalkresort.co.in">lorem@gmail.com</a>
                                                 </li>
                                                 <li class="social-links">
-                                                    <a href=""><span
-                                                            class="fab fa-facebook-f"></span></a>
-                                                    <a href=""><span
-                                                            class="fab fa-instagram"></span></a>
+                                                    <a href=""><span class="fab fa-facebook-f"></span></a>
+                                                    <a href=""><span class="fab fa-instagram"></span></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -402,10 +403,8 @@
                                         <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Send Now</span></button>
                                     </div>
                                 </form> -->
-                                    <iframe
-                                        src=""
-                                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="" width="400" height="300" style="border:0;" allowfullscreen=""
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -415,7 +414,7 @@
             </div>
 
             <!-- Footer Bottom -->
-            <div class="footer-bottom"  style="background-color:#856b5c ;">
+            <div class="footer-bottom" style="background-color:#856b5c ;">
                 <div class="auto-container">
                     <div class="inner clearfix">
                         <div class="copyright">&copy; 2024 Lorem, ipsum dolor - All Right Reserved</div>
