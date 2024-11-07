@@ -21,6 +21,49 @@
 
     
     <style>
+
+.navigation .dropdown>a {
+            color: #856b5c;
+            position: relative;
+            padding-right: 15px;
+        }
+
+        .navigation .dropdown>a .dropdown-arrow {
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+
+        .navigation .dropdown:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            background-color: #f9f6f3;
+            border: 1px solid #ddd;
+            padding: 10px 0;
+            min-width: 150px;
+            z-index: 10;
+        }
+
+        .navigation .dropdown-menu li a {
+            color: #856b5c;
+            padding: 8px 15px;
+            display: block;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .navigation .dropdown-menu li a:hover {
+            background-color:#b38971c5;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .navigation .dropdown:hover>a .dropdown-arrow {
+            transform: rotate(180deg);
+            transition: transform 0.3s;
+        }
+
+
+        
         .main-footer {
             color: #ffffff;
         }
@@ -46,15 +89,16 @@
         <!-- Main Header -->
         <header class="main-header header-style-one">
             <!-- Header Upper -->
-            <div class="header-upper" style="background-color:#ffffff">
+            <div class="header-upper" style="background-color: #ffffff;">
                 <div class="inner-container clearfix">
-                    <!--Logo-->
+                    <!-- Logo -->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.html">
-                                <img src="Hotel-National -Logo.png" alt=""></a></div>
+                        <div class="logo"><a href="index.html"><img src="Hotel-National-Logo.png" alt="Hotel Logo"></a>
+                        </div>
                     </div>
+
                     <div class="nav-outer clearfix">
-                        <!--Mobile Navigation Toggler-->
+                        <!-- Mobile Navigation Toggler -->
                         <div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span><span
                                 class="txt">Menu</span></div>
 
@@ -62,72 +106,22 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="index.html">Home</a>
-                                        <!-- <ul>
-                                        <li><a href="index.html">Hotel Beach</a></li>
-                                        <li><a href="index-2.html">City Hotel</a></li>
-                                        <li><a href="index-3.html">Mountain Hotel</a></li>
-                                        <li><a href="index-4.html">Luxury Hotel</a></li>
-                                        <li><a href="index-5.html">Resort Hotel</a></li>
-                                        <li class="dropdown"><a href="index.html">Header Styles</a>
-                                            <ul>
-                                                <li><a href="index.html">Header Type 01</a></li>
-                                                <li><a href="index-2.html">Header Type 02</a></li>
-                                                <li><a href="index-3.html">Header Type 03</a></li>
-                                                <li><a href="index-4.html">Header Type 04</a></li>
-                                                <li><a href="index-5.html">Header Type 05</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul> -->
-                                    </li>
+                                    <li class="current"><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Us</a></li>
-                                    <!-- <li  class="dropdown"><a href="rooms-in-morjim.html">Rooms</a>
-                                    <ul>
-                                        <li><a href="rooms-in-morjim.html">Rooms Grid View</a></li>
-                                        <li><a href="rooms-list.html">Rooms List View</a></li>
-                                        <li><a href="rooms-gallery.html">Rooms Gallery</a></li>
-                                        <li><a href="contact-us.html">Room Single</a></li>
-                                    </ul>
-                                </li> -->
-                                    <li class="dropdown"><a href="rooms-grid.html">Rooms</a></li>
-                                    <!-- <li class="dropdown"><a href="beach-view-resorts-in-goa.html">Amenities</a></li> -->
-                                    <!-- <li class="dropdown"><a href="">Gallery</a>
-                                    <li><a href="">Blogs</a></li> -->
-
-                                    <!-- <li  class="dropdown"><a href="rooms-in-morjim.html">Pages</a>
-                                    <ul>
-                                        <li><a href="beach-view-resorts-in-goa.html">Our Staff</a></li>
-                                        <li class="dropdown"><a href="packages.html">Packages</a>
-                                            <ul>
-                                                <li><a href="packages.html">All Packages</a></li>
-                                                <li><a href="package-single.html">Package Single</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="events.html">Events</a>
-                                            <ul>
-                                                <li><a href="events.html">All Events</a></li>
-                                                <li><a href="event-single.html">Event Single</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="gallery.html">Gallery</a>
-                                            <ul>
-                                                <li><a href="gallery.html">Gallery Default</a></li>
-                                                <li><a href="gallery-masonry.html">Gallery Masonry</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="restaurant.html">Restaurant</a></li>
-                                        <li><a href="spa.html">Spa & Wellness</a></li>
-                                    </ul>
-                                </li> -->
-                                    <!-- <li  class="dropdown"><a href="blog-grid.html">News</a>
-                                    <ul>
-                                        <li><a href="blog.html">Blog Sidebar</a></li>
-                                        <li><a href="blog-grid.html">Blog 03 Column</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li> -->
+                                    <li class="dropdown">
+                                        <a href="rooms-grid.html">Rooms <span
+                                                class="dropdown-arrow">&#9662;</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="delux-double-room.html">Deluxe Double Rooms</a></li>
+                                            <hr>
+                                            <li><a href="">Triple Rooms</a></li>
+                                            <hr>
+                                            <li><a href="">Quadruple Rooms</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="gallery.html">Gallery</a></li>
                                     <li><a href="contact-us.html">Contact</a></li>
-                                    <li><a href=""><span class="icon flaticon-smartphone-2"></span><span
+                                    <li><a href="#"><span class="icon flaticon-smartphone-2"></span><span
                                                 class="txt">123456789</span></a></li>
                                 </ul>
                             </div>
@@ -136,44 +130,11 @@
 
                     <div class="other-links clearfix">
                         <div class="link-box">
-                            <ul class="clearfix">
-                                <!-- <li><a href="#"><span class="icon flaticon-padlock"></span><span class="txt">Login</span></a></li> -->
-                                <!-- <li><a href="te:+917738982330"><span class="icon flaticon-smartphone-2"></span><span class="txt">+91 7738982330</span></a></li> -->
-                            </ul>
-                        </div>
-                        <div class="link-box">
-                            <a href="" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a>
+                            <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <!--End Header Upper-->
-
-            <!-- Mobile Menu  -->
-            <div class="mobile-menu">
-                <div class="close-btn"><span class="icon flaticon-targeting-cross"></span></div>
-                <div class="menu-backdrop"></div>
-                <div class="nav-logo"><a href="index.html">National Hotel</a></div>
-                <nav class="menu-box">
-                    <div class="menu-outer">
-                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                    </div>
-                </nav>
-                <div class="nav-bottom">
-                    <div class="copyright">2024 National Hotel | All Rights Reserved @ Hospitality Minds 2024</div>
-                    <!--Social Links-->
-                    <div class="social-links">
-                        <ul class="clearfix">
-                            <a href="https://www.facebook.com/beachwalkresortmorjim"><span
-                                    class="fab fa-facebook-f"></span></a>
-                            <a href="https://www.instagram.com/beachwalkresortmorjim/"><span
-                                    class="fab fa-instagram"></span></a>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- End Mobile Menu -->
-
         </header>
         <!-- End Main Header -->
 
@@ -376,7 +337,7 @@
 
         <!--Testimonials Section-->
         <section class="testimonials-section" style="background-color: #ffffff;">
-            <span class="dotted-pattern dotted-pattern-3"></span>
+            <!-- <span class="dotted-pattern dotted-pattern-3"></span> -->
             <!-- <span class="tri-pattern tri-pattern-2"></span> -->
             <div class="auto-container">
                 <div class="sec-title centered">
@@ -479,7 +440,7 @@
 
         </a>
         <!-- Main Footer -->
-        <footer class="main-footer" style="background-color: #856b5c;">
+        <footer class="main-footer" style="background-color:#856b5c ;">
             <div class="top-pattern-layer-dark"></div>
 
             <!--Widgets Section-->
@@ -491,7 +452,7 @@
                         <div class="column col-xl-3 col-lg-12 col-md-12 col-sm-12">
                             <div class="footer-widget about-widget">
                                 <div class="logo">
-                                    <a href="#"><img src="" alt=""></a>
+                                    <a href="#"><img src="Hotel-National-Logo.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -508,10 +469,10 @@
                                             <ul class="links">
                                                 <li><a href="index.html">Home</a></li>
                                                 <li><a href="about.html">About Us</a></li>
-                                                <li><a href="">Our Rooms</a></li>
+                                                <li><a href="rooms-grid.html">Our Rooms</a></li>
                                                 <!-- <li><a href="restaurant.html">Amenities</a></li> -->
-                                                <!-- <li><a href="gallery.html">Gallery</a></li> -->
-                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="gallery.html">Gallery</a></li>
+                                                <li><a href="contact-us.html">Contact</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -519,14 +480,16 @@
                                                 <h4>Contact</h4>
                                             </div>
                                             <ul class="info">
-                                                <li class="address">Lorem ipsum dolor sit amet consectetur, adipisicing
-                                                    elit. Nihil, cupiditate?</li>
-                                                <li class="phone"><a href="">123456789</a></li>
-                                                <li class="email"><a href="">lorem@gmail.com</a>
+                                                <li class="address">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, ad?</li>
+                                                <li class="phone"><a href="tel:+917738982330">1234557689</a></li>
+                                                <li class="email"><a
+                                                        href="mailto:reservations@beachwalkresort.co.in">lorem@gmail.com</a>
                                                 </li>
                                                 <li class="social-links">
-                                                    <a href=""><span class="fab fa-facebook-f"></span></a>
-                                                    <a href=""><span class="fab fa-instagram"></span></a>
+                                                    <a href=""><span
+                                                            class="fab fa-facebook-f"></span></a>
+                                                    <a href=""><span
+                                                            class="fab fa-instagram"></span></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -545,14 +508,16 @@
                                 <!-- <div class="text">Eiusmod tempor incididunt ut labore et dolore magna aliqua. </div> -->
                                 <!--Newsletter-->
                                 <div class="newsletter-form">
-                                    <!-- <form method="post" action="contact.html">
+                                    <!-- <form method="post" action="contact-us.html">
                                     <div class="form-group clearfix">
                                         <input type="email" name="email" value="" placeholder="Email" required>
                                         <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Send Now</span></button>
                                     </div>
                                 </form> -->
-                                    <iframe src="" width="400" height="300" style="border:0;" allowfullscreen=""
-                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe
+                                        src=""
+                                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -562,10 +527,10 @@
             </div>
 
             <!-- Footer Bottom -->
-            <div class="footer-bottom" style="background-color: #856b5c;">
+            <div class="footer-bottom"  style="background-color:#856b5c ;">
                 <div class="auto-container">
                     <div class="inner clearfix">
-                        <div class="copyright">&copy; 2024 National Hotel - All Right Reserved</div>
+                        <div class="copyright">&copy; 2024 Lorem, ipsum dolor - All Right Reserved</div>
                         <div class="bottom-links">
                             <a href="#">Terms of Service</a> &ensp;|&ensp; <a href="#">Privacy Policy</a>
                         </div>

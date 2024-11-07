@@ -570,7 +570,9 @@ img{
 
 .main-header .header-upper .inner-container{
 	position:relative;
-	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .header-style-one .header-upper .logo-box{
@@ -3584,7 +3586,7 @@ img.lazy-image.loaded{
 
 .testimonials-section{
 	position:relative;
-	padding: 140px 0px 200px;
+	padding: 140px 0px 50px;
 	background: #ffffff;
 }
 
@@ -6488,7 +6490,7 @@ img.lazy-image.loaded{
 	display: block;
 	float: right;
 	width: 100%;
-	max-width: 330px;
+	max-width: 430px;
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10), 0px 30px 30px 0px rgba(0,0,0,0.10);
     z-index: 1;
 }
@@ -6501,7 +6503,7 @@ img.lazy-image.loaded{
 
 .featured-section-four .image-box .image:nth-child(2){
 	position: absolute;
-	max-width: 280px;
+	max-width: 400px;
 	top: 100%;
 	left: 0;
 	margin-top: -95px;
@@ -6509,7 +6511,7 @@ img.lazy-image.loaded{
 
 .featured-section-four .image-box .image:nth-child(3){
 	position: absolute;
-	max-width: 200px;
+	max-width: 380px;
 	top: 100%;
 	left: 200px;
 	margin-top: 90px;
