@@ -4572,7 +4572,8 @@ img.lazy-image.loaded{
 	position: absolute;
 	width: 125px;
 	height: 125px;
-	background: #edf0f5;
+	/* background: #edf0f5; */
+	background:#856b5c;
 	opacity: 0.50;
 	border-radius: 50%;
 }
@@ -4583,7 +4584,8 @@ img.lazy-image.loaded{
 	top: 60px;
 	width: 80px;
 	height: 80px;
-	background: #edf0f5;
+	/* background: #edf0f5; */
+	background:#856b5c;
 	opacity: 0.50;
 	border-radius: 50%;
 	z-index: 1;
@@ -6622,7 +6624,8 @@ img.lazy-image.loaded{
 }
 
 .facts-section-two.alternate .fact-block .fact-count{
-	background: rgba(255,255,255,0.10);
+	/* background: rgba(255,255,255,0.10); */
+	background: #000;
 }
 
 .facts-section-two .fact-block h4{

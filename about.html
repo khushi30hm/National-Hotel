@@ -10,8 +10,11 @@
     <!-- Responsive File -->
     <link href="css/responsive.css" rel="stylesheet">
 
-    <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
     <!-- Responsive Settings -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,18 +39,20 @@
             background: #b5907bcb;
         }
 
-
-        .main-footer {
+        .featured-section-four .auto-container .row .inner .sec-title h2,
+        .featured-section-four .auto-container .row .inner .text {
             color: #ffffff;
         }
 
-        .main-footer a,
-        .main-footer .widget-title h4,
-        .main-footer .copyright,
-        .main-footer ul li,
-        .main-footer ul li a {
-            color: #ffffff !important;
+        .facts-section-two .auto-container .sec-title h2,
+        .facts-section-two .auto-container .sec-title .lower-text,
+        .fact-block .fact-inner h2,
+        .facts-section-two.alternate .fact-block h4,
+        .facts-section-two.alternate .fact-block .text {
+            color: black;
         }
+
+
 
         @media (max-width: 480px) {
 
@@ -81,7 +86,7 @@
                     <!--Logo-->
                     <div class="logo-box">
                         <div class="logo"><a href="index.html">
-                                <img src="Hotel-National-Logo.png" alt=""></a></div>
+                                <img src="hotel-imgs/national-logo.jpg" alt=""></a></div>
                     </div>
                     <div class="nav-outer clearfix">
                         <!--Mobile Navigation Toggler-->
@@ -176,7 +181,7 @@
         <!--End Banner Section -->
 
         <!--Featured Section-->
-        <section class="featured-section-four about-page" style="background-color:#ffffff;">
+        <section class="featured-section-four about-page" style="background-color:#856b5c;">
             <span class="dotted-pattern dotted-pattern-11"></span>
             <div class="circles-two">
                 <div class="c-1"></div>
@@ -221,7 +226,7 @@
         </section>
 
         <!--Facts Section-->
-        <section class="facts-section-two alternate" style="background-color:#856b5c;">
+        <section class="facts-section-two alternate" style="background-color:#ffffff;">
             <div class="circles">
                 <div class="c-1"></div>
                 <div class="c-2"></div>
@@ -351,7 +356,7 @@
     </section> -->
 
         <!--Testimonials Section-->
-        <section class="testimonials-section" style="background-color: #ffffff;">
+        <section class="testimonials-section" style="background-color: #856b5c;">
             <!-- <span class="dotted-pattern dotted-pattern-3"></span> -->
             <!-- <span class="tri-pattern tri-pattern-2"></span> -->
             <div class="auto-container">
@@ -454,7 +459,7 @@
 
         </a>
         <!-- Main Footer -->
-        <footer class="main-footer" style="background-color:#856b5c ;">
+        <footer class="main-footer" style="background-color:#ffffff;">
             <div class="top-pattern-layer-dark"></div>
 
             <!--Widgets Section-->
@@ -466,7 +471,7 @@
                         <div class="column col-xl-3 col-lg-12 col-md-12 col-sm-12">
                             <div class="footer-widget about-widget">
                                 <div class="logo">
-                                    <a href="#"><img src="Hotel-National-Logo.png" alt=""></a>
+                                    <a href="#"><img src="hotel-imgs/natioanl-logo2.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -483,7 +488,7 @@
                                             <ul class="links">
                                                 <li><a href="index.html">Home</a></li>
                                                 <li><a href="about.html">About Us</a></li>
-                                                <li><a href="rooms-grid.html">Our Rooms</a></li>
+                                                <li><a href="our-rooms.html">Our Rooms</a></li>
                                                 <!-- <li><a href="restaurant.html">Amenities</a></li> -->
                                                 <li><a href="gallery.html">Gallery</a></li>
                                                 <li><a href="contact-us.html">Contact</a></li>
@@ -494,11 +499,13 @@
                                                 <h4>Contact</h4>
                                             </div>
                                             <ul class="info">
-                                                <li class="address">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                    elit. Vel, ad?</li>
-                                                <li class="phone"><a href="tel:+917738982330">1234557689</a></li>
+                                                <li class="address">Marg 337 MS Ali Road Near Shalimar Theater, Grant
+                                                    Road East, Bharat Nagar, Mumbai, Maharashtra 400007</li>
+                                                <li class="phone"><a href="tel:919619057331
+                                                    ">9619057331
+                                                    </a></li>
                                                 <li class="email"><a
-                                                        href="mailto:reservations@beachwalkresort.co.in">lorem@gmail.com</a>
+                                                        href="mailto:hotelnational8@gmail.com">hotelnational8@gmail.com</a>
                                                 </li>
                                                 <li class="social-links">
                                                     <a href=""><span class="fab fa-facebook-f"></span></a>
@@ -538,19 +545,18 @@
             </div>
 
             <!-- Footer Bottom -->
-            <div class="footer-bottom" style="background-color:#856b5c ;">
+            <div class="footer-bottom" style="background-color:#ffffff ;">
                 <div class="auto-container">
-                    <div class="inner clearfix">
-                        <div class="copyright">&copy; 2024 Lorem, ipsum dolor - All Right Reserved</div>
-                        <div class="bottom-links">
+                    <div class="inner clearfix" style="display: flex;justify-content: center;align-items: center;">
+                        <div class="copyright">&copy; 2024 Hospitality Minds - All Right Reserved</div>
+                        <!-- <div class="bottom-links">
                             <a href="#">Terms of Service</a> &ensp;|&ensp; <a href="#">Privacy Policy</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
 
         </footer>
-
     </div>
     <!--End pagewrapper--><!--Scroll to top-->
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-up-arrow"></span></div>

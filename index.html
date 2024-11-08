@@ -12,9 +12,12 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Responsive File -->
     <link href="css/responsive.css" rel="stylesheet">
-    <!-- 
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
+
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
     <!-- Responsive Settings -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,7 +61,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 20px;
         }
 
         .dropdown ul li {
@@ -69,37 +71,31 @@
             background: #b5907bcb;
         }
 
-        .main-footer {
+        .testimonials-section .auto-container .sec-title h2,
+        .testimonials-section .auto-container .info .name {
             color: #ffffff;
         }
 
-        .main-footer a,
-        .main-footer .widget-title h4,
-        .main-footer .copyright,
-        .main-footer ul li,
-        .main-footer ul li a {
-            color: #ffffff !important;
+        .rooms-section-one .outer-container .auto-container .sec-title h2,
+        .rooms-section-one .outer-container .auto-container .sec-title .lower-text {
+            color: #ffffff;
         }
 
-        .featured-section,
-        .featured-section * {
-            color: #ffffff !important;
+        .about-section .text-column .inner .sec-title h2, .about-section .text-column .inner .text{
+            color: #ffffff;
         }
 
-        .facts-section,
-        .facts-section * {
-            color: #ffffff !important;
-        }
+
 
         @media (max-width: 480px) {
 
-            .main-header .header-upper .inner-container .logo-box{
-                 margin-right:100px ;
+            .main-header .header-upper .inner-container .logo-box {
+                margin-right: 100px;
             }
 
-            
-            .main-header .header-upper .inner-container .nav-outer{
-              margin-left:120px ;
+
+            .main-header .header-upper .inner-container .nav-outer {
+                margin-left: 120px;
             }
 
 
@@ -124,7 +120,7 @@
                     <!--Logo-->
                     <div class="logo-box">
                         <div class="logo"><a href="index.html">
-                                <img src="Hotel-National-Logo.png" alt=""></a></div>
+                                <img src="hotel-imgs/national-logo.jpg" alt=""></a></div>
                     </div>
                     <div class="nav-outer clearfix">
                         <!--Mobile Navigation Toggler-->
@@ -255,7 +251,7 @@
         <!--End Banner Section -->
 
         <!--About Section-->
-        <section class="about-section" style="background-color:#ffffff;">
+        <section class="about-section" style="background-color:#856b5c;">
             <!-- <div class="pattern-bottom"></div> -->
             <span class="dotted-pattern dotted-pattern-1"></span>
             <!-- <span class="tri-pattern tri-pattern-1"></span> -->
@@ -356,7 +352,7 @@
         </section>
 
         <!--Facts Section-->
-        <section class="facts-section" style="background-color:#856b5c">
+        <section class="facts-section" style="background-color:#ffffff">
             <span class="dotted-pattern dotted-pattern-3"></span>
             <div class="left-bottom-image"><img src="hotel-imgs/img11.jpg" alt="" title=""></div>
             <div class="auto-container">
@@ -424,7 +420,7 @@
         </div>
 
         <!--Rooms Section-->
-        <section class="rooms-section-one" style="background-color:#ffffff">
+        <section class="rooms-section-one" style="background-color:#856b5c">
             <div class="outer-container">
                 <div class="auto-container">
                     <div class="sec-title centered">
@@ -713,7 +709,7 @@
         <!-- </section> -->
 
         <!--Featured Section-->
-        <section class="featured-section" style="background-color:#856b5c">
+        <section class="featured-section" style="background-color:#ffffff">
             <!-- <div class="pattern-top"></div> -->
             <span class="dotted-pattern dotted-pattern-3"></span>
             <!-- <span class="tri-pattern tri-pattern-3"></span> -->
@@ -788,7 +784,7 @@
     </section> -->
 
         <!--Testimonials Section-->
-        <section class="testimonials-section" style="background-color:#ffffff">
+        <section class="testimonials-section" style="background-color:#856b5c">
             <!-- <span class="dotted-pattern dotted-pattern-3"></span> -->
             <!-- <span class="tri-pattern tri-pattern-2"></span> -->
             <div class="auto-container">
@@ -972,7 +968,7 @@
 
         </a>
         <!-- Main Footer -->
-        <footer class="main-footer" style="background-color:#856b5c ;">
+        <footer class="main-footer" style="background-color:#ffffff;">
             <div class="top-pattern-layer-dark"></div>
 
             <!--Widgets Section-->
@@ -984,7 +980,7 @@
                         <div class="column col-xl-3 col-lg-12 col-md-12 col-sm-12">
                             <div class="footer-widget about-widget">
                                 <div class="logo">
-                                    <a href="#"><img src="Hotel-National-Logo.png" alt=""></a>
+                                    <a href="#"><img src="hotel-imgs/natioanl-logo2.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -1012,11 +1008,13 @@
                                                 <h4>Contact</h4>
                                             </div>
                                             <ul class="info">
-                                                <li class="address">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                    elit. Vel, ad</li>
-                                                <li class="phone"><a href="">1234557689</a></li>
+                                                <li class="address">Marg 337 MS Ali Road Near Shalimar Theater, Grant
+                                                    Road East, Bharat Nagar, Mumbai, Maharashtra 400007</li>
+                                                <li class="phone"><a href="tel:919619057331
+                                                    ">9619057331
+                                                    </a></li>
                                                 <li class="email"><a
-                                                        href="">lorem@gmail.com</a>
+                                                        href="mailto:hotelnational8@gmail.com">hotelnational8@gmail.com</a>
                                                 </li>
                                                 <li class="social-links">
                                                     <a href=""><span class="fab fa-facebook-f"></span></a>
@@ -1056,7 +1054,7 @@
             </div>
 
             <!-- Footer Bottom -->
-            <div class="footer-bottom" style="background-color:#856b5c ;">
+            <div class="footer-bottom" style="background-color:#ffffff ;">
                 <div class="auto-container">
                     <div class="inner clearfix" style="display: flex;justify-content: center;align-items: center;">
                         <div class="copyright">&copy; 2024 Hospitality Minds - All Right Reserved</div>
