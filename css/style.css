@@ -3987,7 +3987,7 @@ img.lazy-image.loaded{
 
 .main-footer .widgets-section{
 	position:relative;
-	padding:120px 0px 80px;
+	padding:60px 0px 0px;
 }
 
 .main-footer .footer-widget{
@@ -4186,7 +4186,7 @@ img.lazy-image.loaded{
 	position: relative;
 	display: block;
 	text-align: center;
-	padding: 30px 0px;
+	padding: 10px 0px;
 	line-height: 24px;
 	border-top: 1px solid rgba(255,255,255,0.10);
 }
@@ -4194,6 +4194,7 @@ img.lazy-image.loaded{
 .main-footer .footer-bottom .copyright{
 	position:relative;
 	float: left;
+	color: black;
 }
 
 .main-footer .footer-bottom .bottom-links{
