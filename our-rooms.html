@@ -39,6 +39,11 @@
         background: #b5907bcb;
     }
 
+    .featured-section .auto-container .featured-block .text-column .inner h3,
+    .featured-section .auto-container .featured-block .text-column .inner .text {
+        color: #ffffff;
+    }
+
 
     @media (max-width: 480px) {
 
@@ -59,9 +64,9 @@
 
     <div class="page-wrapper">
         <!-- Preloader -->
-        <div class="preloader">
+        <!-- <div class="preloader">
             <div class="icon"></div>
-        </div>
+        </div> -->
 
         <!-- Main Header -->
         <header class="main-header header-style-one">
@@ -96,7 +101,8 @@
                                     </li>
                                     <li><a href="gallery.html">Gallery</a></li>
                                     <li><a href="contact-us.html">Contact</a></li>
-                                    <li><a href=""><span class="icon flaticon-smartphone-2"></span><span
+                                    <li><a href="tel:+919619057331"><span
+                                                class="icon flaticon-smartphone-2"></span><span
                                                 class="txt">+919619057331</span></a></li>
                                 </ul>
                             </div>
@@ -110,7 +116,7 @@
                             </ul>
                         </div>
                         <div class="link-box">
-                            <a href="" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a>
+                            <a href="contact-us.html" class="theme-btn btn-style-one"><span class="btn-title">Book Now</span></a>
                         </div>
                     </div>
 
@@ -166,99 +172,122 @@
         <!--End Banner Section -->
 
         <!--Rooms Section-->
-        <section class="rooms-section" style="background-color:#856b5c;">
+        <!-- <section class="rooms-section" style="background-color:#856b5c;">
             <div class="auto-container">
-                <!--Filters Section-->
-                <!-- <div class="filters-section filters-container">
-                <div class="form-box default-form filter-form wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <form method="post" action="contact.html">
-                        <div class="row clearfix">
-                            <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                <div class="field-label">Stay</div>
-                                <div class="field-inner">
-                                    <input id="arrival-date" class="date-picker" type="text" name="field-name" value="Nov 02. 2019" placeholder="">
-                                    <label for="arrival-date" class="icon flaticon-down-arrow"></label>
+                Filters Section
+                <div class="filters-section filters-container">
+                    <div class="form-box default-form filter-form wow fadeInUp" data-wow-delay="0ms"
+                        data-wow-duration="1500ms">
+                        <form method="post" action="contact.html">
+                            <div class="row clearfix">
+                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="field-label">Stay</div>
+                                    <div class="field-inner">
+                                        <input id="arrival-date" class="date-picker" type="text" name="field-name"
+                                            value="Nov 02. 2019" placeholder="">
+                                        <label for="arrival-date" class="icon flaticon-down-arrow"></label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                <div class="field-label">Room type</div>
-                                <div class="field-inner">
-                                    <select class="custom-select-box">
-                                        <option>Balcony Room</option>
-                                        <option>Deluxe Room</option>
-                                        <option>Superior Room</option>
-                                        <option>Luxury Room</option>
-                                    </select>
+                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="field-label">Room type</div>
+                                    <div class="field-inner">
+                                        <select class="custom-select-box">
+                                            <option>Balcony Room</option>
+                                            <option>Deluxe Room</option>
+                                            <option>Superior Room</option>
+                                            <option>Luxury Room</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                <div class="field-label">Guests</div>
-                                <div class="field-inner">
-                                    <div class="check-sel-box">
-                                        <div class="check-sel-btn">
-                                            <span class="adult-info">2 Adults.</span>
-                                            <span class="child-info">1 Children</span>
+                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="field-label">Guests</div>
+                                    <div class="field-inner">
+                                        <div class="check-sel-box">
+                                            <div class="check-sel-btn">
+                                                <span class="adult-info">2 Adults.</span>
+                                                <span class="child-info">1 Children</span>
+                                            </div>
+                                            <ul class="check-sel-droplist">
+                                                <li>
+                                                    <div class="sel-title">Select Adults:</div>
+                                                    <div class="clearfix">
+                                                        <div class="radio-block adult-block"><input type="radio"
+                                                                name="adult-group" id="radio-1" value="1 Adults."><label
+                                                                for="radio-1">1</label></div>
+                                                        <div class="radio-block adult-block"><input type="radio"
+                                                                name="adult-group" id="radio-2" value="2 Adults."
+                                                                checked=""><label for="radio-2">2</label></div>
+                                                        <div class="radio-block adult-block"><input type="radio"
+                                                                name="adult-group" id="radio-3" value="3 Adults."><label
+                                                                for="radio-3">3</label></div>
+                                                        <div class="radio-block adult-block"><input type="radio"
+                                                                name="adult-group" id="radio-4" value="4 Adults."><label
+                                                                for="radio-4">4</label></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="sel-title">Select Children:</div>
+                                                    <div class="clearfix">
+                                                        <div class="radio-block child-block"><input type="radio"
+                                                                name="child-group" id="radio-5" value="1 Children"
+                                                                checked=""><label for="radio-5">1</label></div>
+                                                        <div class="radio-block child-block"><input type="radio"
+                                                                name="child-group" id="radio-6"
+                                                                value="2 Children"><label for="radio-6">2</label></div>
+                                                        <div class="radio-block child-block"><input type="radio"
+                                                                name="child-group" id="radio-7"
+                                                                value="3 Children"><label for="radio-7">3</label></div>
+                                                        <div class="radio-block child-block"><input type="radio"
+                                                                name="child-group" id="radio-8"
+                                                                value="4 Children"><label for="radio-8">4</label></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <ul class="check-sel-droplist">
-                                            <li>
-                                                <div class="sel-title">Select Adults:</div>
-                                                <div class="clearfix">
-                                                    <div class="radio-block adult-block"><input type="radio" name="adult-group" id="radio-1" value="1 Adults."><label for="radio-1">1</label></div>
-                                                    <div class="radio-block adult-block"><input type="radio" name="adult-group" id="radio-2" value="2 Adults." checked=""><label for="radio-2">2</label></div>
-                                                    <div class="radio-block adult-block"><input type="radio" name="adult-group" id="radio-3" value="3 Adults."><label for="radio-3">3</label></div>
-                                                    <div class="radio-block adult-block"><input type="radio" name="adult-group" id="radio-4" value="4 Adults."><label for="radio-4">4</label></div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="sel-title">Select Children:</div>
-                                                <div class="clearfix">
-                                                    <div class="radio-block child-block"><input type="radio" name="child-group" id="radio-5" value="1 Children" checked=""><label for="radio-5">1</label></div>
-                                                    <div class="radio-block child-block"><input type="radio" name="child-group" id="radio-6" value="2 Children"><label for="radio-6">2</label></div>
-                                                    <div class="radio-block child-block"><input type="radio" name="child-group" id="radio-7" value="3 Children"><label for="radio-7">3</label></div>
-                                                    <div class="radio-block child-block"><input type="radio" name="child-group" id="radio-8" value="4 Children"><label for="radio-8">4</label></div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="field-label e-label">&nbsp;</div>
+                                    <div class="field-inner">
+                                        <button class="theme-btn btn-style-one"><span class="btn-title">Start
+                                                Filter</span></button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                <div class="field-label e-label">&nbsp;</div>
-                                <div class="field-inner">
-                                    <button class="theme-btn btn-style-one"><span class="btn-title">Start  Filter</span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div> -->
                 <div class="row clearfix">
 
-                    <!-- <div class="room-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="contact.html"><img src="images/gallery/1.png" alt="" title=""></a></figure>
-                        </div>
-                        <div class="lower-box">
-                            
-                            <h4>Executive Room Special</h4>
-                            <div class="pricing clearfix">
-                                <div class="price">From <span>$50.00</span></div>
-                                <div class="rating">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    
-                                </div>
+                    <div class="room-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"
+                        data-wow-duration="1500ms">
+                        <div class="inner-box">
+                            <div class="image-box">
+                                <figure class="image"><a href="contact.html"><img src="images/gallery/1.png" alt=""
+                                            title=""></a></figure>
                             </div>
+                            <div class="lower-box">
 
-                            <div class="text">Excepteur sint occaecat cupidatat dent in sun in culpa qui officia deserunt mollit anim id est.</div>
-                            <div class="link-box"><a href="contact.html" class="theme-btn btn-style-three"><span class="btn-title">Know More</span></a></div>
+                                <h4>Executive Room Special</h4>
+                                <div class="pricing clearfix">
+                                    <div class="price">From <span>$50.00</span></div>
+                                    <div class="rating">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+
+                                    </div>
+                                </div>
+
+                                <div class="text">Excepteur sint occaecat cupidatat dent in sun in culpa qui officia
+                                    deserunt mollit anim id est.</div>
+                                <div class="link-box"><a href="contact.html" class="theme-btn btn-style-three"><span
+                                            class="btn-title">Know More</span></a></div>
+                            </div>
                         </div>
                     </div>
-                </div> -->
 
                     <div class="room-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms"
                         data-wow-duration="1500ms">
@@ -270,17 +299,18 @@
                             <div class="lower-box">
                                 <h4> Deluxe Double Room</h4>
                                 <div class="pricing clearfix">
-                                    <!-- <div class="price">From <span>$50.00</span></div>
-                                <div class="rating">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div> -->
+                                    <div class="price">From <span>$50.00</span></div>
+                                    <div class="rating">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
                                 </div>
 
-                                <!-- <div class="text">Excepteur sint occaecat cupidatat dent in sun in culpa qui officia deserunt mollit anim id est.</div> -->
+                                <div class="text">Excepteur sint occaecat cupidatat dent in sun in culpa qui officia
+                                    deserunt mollit anim id est.</div>
                                 <div class="link-box"><a href="delux-double-room.html"
                                         class="theme-btn btn-style-three"><span class="btn-title">Book Now</span></a>
                                 </div>
@@ -298,17 +328,18 @@
                             <div class="lower-box">
                                 <h4>Triple Room</h4>
                                 <div class="pricing clearfix">
-                                    <!-- <div class="price">From <span>$50.00</span></div>
-                                <div class="rating">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div> -->
+                                    <div class="price">From <span>$50.00</span></div>
+                                    <div class="rating">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
                                 </div>
 
-                                <!-- <div class="text">Excepteur sint occaecat cupidatat dent in sun in culpa qui officia deserunt mollit anim id est.</div> -->
+                                <div class="text">Excepteur sint occaecat cupidatat dent in sun in culpa qui officia
+                                    deserunt mollit anim id est.</div>
                                 <div class="link-box"><a href="" class="theme-btn btn-style-three"><span
                                             class="btn-title">Book Now</span></a></div>
                             </div>
@@ -327,17 +358,17 @@
                             <div class="lower-box">
                                 <h4>Deluxe Quadruple Room</h4>
                                 <div class="pricing clearfix">
-                                    <!-- <div class="price">From <span>$50.00</span></div>
-                                <div class="rating">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div> -->
+                                    <div class="price">From <span>$50.00</span></div>
+                                    <div class="rating">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
                                 </div>
 
-                                <!-- <div class="text">Excepteur sint occaecat cupidatat dent in sun in culpa qui officia deserunt mollit anim id est.</div> -->
+                                <div class="text">Excepteur sint occaecat cupidatat dent in sun in culpa qui officia deserunt mollit anim id est.</div>
                                 <div class="link-box"><a href="delux-double-room.html"
                                         class="theme-btn btn-style-three"><span class="btn-title">Book Now</span></a>
                                 </div>
@@ -345,7 +376,7 @@
                         </div>
                     </div>
 
-                    <!-- <div class="room-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                    <div class="room-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="image-box">
                             <figure class="image"><a href="contact.html"><img src="images/resource/featured-image-25.jpg" alt="" title=""></a></figure>
@@ -463,8 +494,104 @@
                             <div class="link-box"><a href="contact.html" class="theme-btn btn-style-three"><span class="btn-title">Check Availability</span></a></div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
+                </div>
+            </div>
+        </section> -->
+
+
+        <!--Featured Section-->
+        <section class="featured-section" style="background-color:#856b5c">
+            <!-- <div class="pattern-top"></div> -->
+            <span class="dotted-pattern dotted-pattern-3"></span>
+            <!-- <span class="tri-pattern tri-pattern-3"></span> -->
+            <div class="auto-container">
+                <div class="featured-block">
+                    <div class="row clearfix">
+                        <!--Text Column-->
+                        <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <h3>Deluxe Double Room</h3>
+                                <div class="text">Ideal for solo travellers or couples, our Double Room offers a cosy
+                                    space with a comfortable double bed, air conditioning, and free WiFi. Unwind after a
+                                    day in Mumbai with modern amenities, including a private bathroom with a shower,
+                                    soft towels, and a non-smoking environment.
+                                </div>
+                                <div class="link-box">
+                                    <a href="delux-double-room.html" class="theme-btn btn-style-one"><span
+                                            class="btn-title">Know
+                                            More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Image Column-->
+                        <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <figure class="image"><a href="#"><img src="hotel-imgs/img12.jpg" alt=""
+                                                title=""></a></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-block alternate">
+                    <div class="row clearfix">
+                        <!--Text Column-->
+                        <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <h3>Deluxe Triple Room</h3>
+                                <div class="text">Perfect for small families or groups, the Triple Room provides both
+                                    comfort and convenience with a mix of one single bed and one large double bed. Enjoy
+                                    air conditioning, free WiFi, and a flat-screen TV, along with a private bathroom, a
+                                    spacious desk, and a serene atmosphere for a restful stay.
+                                </div>
+                                <div class="link-box">
+                                    <a href="" class="theme-btn btn-style-one"><span class="btn-title">know
+                                            More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Image Column-->
+                        <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <figure class="image"><a href="#"><img src="hotel-imgs/img18.jpg" alt=""
+                                                title=""></a></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-block">
+                    <div class="row clearfix">
+                        <!--Text Column-->
+                        <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <h3>Quadruple Room</h3>
+                                <div class="text">Designed for larger families or groups, the Quadruple Room features
+                                    two double beds to accommodate up to four guests. Relax in a well-appointed space
+                                    complete with air conditioning, free WiFi, a flat-screen TV, and a private bathroom.
+                                    With a non-smoking policy, plush towels, and ample desk space, this room ensures a
+                                    comfortable and hassle-free stay.
+                                </div>
+                                <div class="link-box">
+                                    <a href="" class="theme-btn btn-style-one"><span class="btn-title">know
+                                            More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Image Column-->
+                        <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                            <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <figure class="image"><a href="#"><img src="hotel-imgs/img1.jpg" alt=""
+                                                title=""></a></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -526,10 +653,10 @@
                                                 <li class="email"><a
                                                         href="mailto:hotelnational8@gmail.com">hotelnational8@gmail.com</a>
                                                 </li>
-                                                <li class="social-links">
+                                                <!-- <li class="social-links">
                                                     <a href=""><span class="fab fa-facebook-f"></span></a>
                                                     <a href=""><span class="fab fa-instagram"></span></a>
-                                                </li>
+                                                </li> -->
                                             </ul>
                                         </div>
 
@@ -542,7 +669,7 @@
                         <div class="column col-xl-4 col-lg-4 col-md-12 col-sm-12">
                             <div class="footer-widget newsletter-widget">
                                 <div class="widget-title">
-                                    <h4>Location</h4>
+                                    <h4>Social</h4>
                                 </div>
                                 <!-- <div class="text">Eiusmod tempor incididunt ut labore et dolore magna aliqua. </div> -->
                                 <!--Newsletter-->
@@ -553,8 +680,12 @@
                                         <button type="submit" class="theme-btn btn-style-one"><span class="btn-title">Send Now</span></button>
                                     </div>
                                 </form> -->
-                                    <iframe src="" width="400" height="300" style="border:0;" allowfullscreen=""
-                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <!-- <iframe src="" width="400" height="300" style="border:0;" allowfullscreen=""
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                    <li class="social-links">
+                                        <a href="" style="margin: 20px;"><span class="fab fa-facebook-f"></span></a>
+                                        <a href=""><span class="fab fa-instagram"></span></a>
+                                    </li>
                                 </div>
                             </div>
                         </div>
